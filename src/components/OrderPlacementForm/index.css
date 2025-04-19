@@ -1,0 +1,121 @@
+/* index.css */
+
+/* Container for the form */
+.order-placement-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form title */
+  .form-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input and textarea fields */
+  .form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Textarea specific styles */
+  .form-textarea {
+    height: 120px;
+  }
+  
+  /* Items section title */
+  .items-title {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* List of items */
+  .items-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Item name and price */
+  .item-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  /* Quantity control buttons */
+  .quantity-control {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .quantity {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .order-placement-form {
+      padding: 15px;
+    }
+  
+    .form-input, .form-textarea {
+      font-size: 14px;
+    }
+  
+    .submit-btn {
+      padding: 10px;
+    }
+  }
+  

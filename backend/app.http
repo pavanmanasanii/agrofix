@@ -1,0 +1,81 @@
+### 
+POST http://localhost:5000/register
+Content-type: application/json
+
+{
+    "name": "Ram",
+    "email": "ram@gmail.com",
+    "password": "Ram@123"
+}
+
+### 
+POST http://localhost:5000/login
+Content-type: application/json
+
+{
+  "name": "Ram",
+  "password": "Ram@123"
+}
+
+### 
+GET http://localhost:5000/api/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJhbSIsImlhdCI6MTc0NDk2NTMzOX0.nsjFx6M5Ak3QRIbtpa2fUK7LVGGLCoiopuG6b-ESNX4
+
+### 
+POST http://localhost:5000/api/orders
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJhbSIsImlhdCI6MTc0NDk2MjQ4Mn0.qIJHIbOPuS2wjXAoveunaHVhK8BNHxKsV-pdGNEvYC4
+
+{
+  "buyer_name": "Ram",
+  "buyer_contact": 1234567891,
+  "delivery_address": "123 Green Street,Apt 45,New York,10001,USA",
+  "items": [
+    {
+      "productId": "101",
+      "productName": "Tomatoes",
+      "quantity": 5,
+      "price": 3
+    },
+    {
+      "productId": "102",
+      "productName": "Potatoes",
+      "quantity": 3,
+      "price": 2
+    }
+  ],
+  "status": "Pending"
+}
+
+
+### Add Product (Admin Only)
+POST http://localhost:5000/api/products
+Content-Type: application/json
+Authorization: Bearer $2b$12$KJzHNlUZyGcaHj2ePfzwvO7os1YEAQgQhpdoPP7XrIlhXAyoGrImq
+
+{
+  "name": "Test Product",
+  "price": 49,
+  "quantity": 100,
+  "image_url": "https://example.com/image.jpg"
+}
+
+### Update Product (Admin Only)
+PUT http://localhost:5000/api/products/1
+Content-Type: application/json
+Authorization: Bearer $2b$12$KJzHNlUZyGcaHj2ePfzwvO7os1YEAQgQhpdoPP7XrIlhXAyoGrImq
+
+{
+  "name": "Updated Product",
+  "price": 59.99,
+  "quantity": 120,
+  "image_url": "https://example.com/image-new.jpg"
+}
+
+### Delete Product (Admin Only)
+DELETE http://localhost:5000/api/products/32
+Authorization: Bearer $2b$12$KJzHNlUZyGcaHj2ePfzwvO7os1YEAQgQhpdoPP7XrIlhXAyoGrImq
+
+### Get All Products
+GET http://localhost:5000/api/products
+Authorization: Bearer $2b$12$KJzHNlUZyGcaHj2ePfzwvO7os1YEAQgQhpdoPP7XrIlhXAyoGrImq

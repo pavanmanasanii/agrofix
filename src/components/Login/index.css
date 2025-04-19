@@ -1,0 +1,112 @@
+/* Login Form Container */
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 40px;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+  }
+  
+  /* Login Website Logo for Mobile */
+  .login-website-logo-mobile-image {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  /* Login Website Logo for Desktop */
+  .login-website-logo-desktop-image {
+    width: 200px;
+    margin-bottom: 20px;
+    display: none;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Input Container */
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .input-label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .username-input-field,
+  .password-input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .username-input-field:focus,
+  .password-input-field:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Login Button */
+  .login-button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Register Link */
+  p {
+    font-size: 16px;
+  }
+  
+  p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (min-width: 768px) {
+    .login-website-logo-mobile-image {
+      display: none;
+    }
+    
+    .login-website-logo-desktop-image {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,54 @@
+/* index.css */
+
+/* Container for Navbar */
+.navbar-container {
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the navbar links */
+  .navbar-link p {
+    color: white;
+    text-decoration: none;
+    margin: 10px 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  .navbar-link p:hover {
+    color: #f1c40f;
+    cursor: pointer;
+  }
+  
+  /* Admin Links Container */
+  .admin-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* User Links Container */
+  .user-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-link p {
+      font-size: 16px;
+      margin: 8px 0;
+    }
+  }
+  

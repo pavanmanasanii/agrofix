@@ -1,0 +1,75 @@
+/* MyOrders.css */
+
+/* Container for the whole My Orders page */
+.orders-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orders-header {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .no-orders-message, .loading-message, .error-message {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .orders-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .order-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .order-items-list {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .order-item-name {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  /* Label classes */
+  .order-id-label, .order-buyer-label, .order-contact-label, .order-address-label, .order-status-label, .order-items-label {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Responsive styling for smaller devices */
+  @media (max-width: 600px) {
+    .orders-container {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .orders-header {
+      font-size: 20px;
+    }
+  
+    .no-orders-message, .loading-message, .error-message, .order-item {
+      font-size: 14px;
+    }
+  }
+  
