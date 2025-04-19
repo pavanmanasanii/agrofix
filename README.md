@@ -1,3 +1,23 @@
+Database Setup:
+Neon.tech/Docker: Set up a PostgreSQL database on Neon.tech.
+Database Schema: Design the database schema with tables for products (vegetables/fruits) and orders. The product table should include fields like id, name, and price. The orders table should include fields like id, buyer_name, buyer_contact, delivery_address, items (serialized as JSON), and status.
+
+# Setting Up Environment Variables
+
+To run this project locally, you need to set up your environment variables in a `.env` file.
+
+### Steps:
+
+1. Create a `.env` file in the root directory of the project.
+2. Add the following environment variables:
+
+```env
+DB_HOST=localhost
+DB_USER=yourUsername
+DB_PASSWORD=yourPassword
+DB_NAME=yourDatabase
+SECRET_KEY=yourSecretKey
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
